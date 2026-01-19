@@ -5,10 +5,14 @@ import com.service.student.service.entity.Student;
 import com.service.student.service.mapper.StudentMapper;
 import com.service.student.service.repository.StudentRepository;
 import com.service.student.service.service.StudentService;
+
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Slf4j
 @Service
 public class StudentServiceImpl implements StudentService {
 
@@ -22,7 +26,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Student saveStudent(StudentDto student) {
-
+        log.info("Demarrager");
         Student studentEntity = new Student();
         studentEntity.setFirstname(student.getFirstname());
         studentEntity.setLastname(student.getLastname());
@@ -69,5 +73,4 @@ public class StudentServiceImpl implements StudentService {
     public void deleteStudent(Integer id) {
         studentRepository.deleteById(id);
     }
-
 }
