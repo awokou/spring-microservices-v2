@@ -1,7 +1,5 @@
 # Microservices Project
 
-![alt text](diagram.png)
-
 This repository contains a demo project showcasing a microservices-based application, designed to provide a hands-on understanding of microservices architecture and implementation. The project consists of an API Gateway, Config Server, Discovery Server, and two microservices: Student and School.
 
 ## Table of Contents
@@ -18,8 +16,6 @@ This repository contains a demo project showcasing a microservices-based applica
 - [Inter-Service Communication](#inter-service-communication)
     - [Using OpenFeign](#using-openfeign)
 - [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
 ## Getting Started
@@ -71,18 +67,3 @@ The School Microservice manages school-related data and operations, including ad
 ### Using OpenFeign
 
 This project demonstrates inter-service communication using OpenFeign, a declarative REST client that simplifies service-to-service communication within the microservices ecosystem.
-
-## Contributing
-
-Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Project Link: https://github.com/awokou/micro-services
-
-## Acknowledgements
-
-- [OpenFeign](https://github.com/OpenFeign/feign)
-- [Spring Cloud Netflix](https://spring.io/projects/spring-cloud-netflix)
