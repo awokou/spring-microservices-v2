@@ -12,6 +12,7 @@ This repository contains a demo project showcasing a microservices-based applica
     - [School Microservice](#school-microservice)
 - [Inter-Service Communication](#inter-service-communication)
     - [Using OpenFeign](#using-openfeign)
+- [Project Frontend](#frontend-project)
 
 ## Getting Started
 
