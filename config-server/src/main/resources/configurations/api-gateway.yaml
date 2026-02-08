@@ -1,13 +1,6 @@
 server:
   port: 8080
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
 spring:
   application:
     name: api-gateway
@@ -30,7 +23,13 @@ spring:
               uri: lb://school-service
               predicates:
                 - Path=/api/schools/**,/school-service/v3/api-docs
-
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
 springdoc:
   api-docs:
     enabled: true
