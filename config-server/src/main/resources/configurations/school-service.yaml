@@ -19,9 +19,9 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-students:
-  service:
-     url: http://localhost:8081/api/students
+application:
+  config:
+    student-url: http://localhost:8081/api/students
 
 eureka:
   instance:

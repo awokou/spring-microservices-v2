@@ -8,7 +8,7 @@ import com.server.common.lib.dto.StudentDto;
 
 import java.util.List;
 
-@FeignClient(name = "student-service", url = "${students.service.url}")
+@FeignClient(name = "student-service", url = "${application.config.student-url}")
 public interface StudentClient {
 
     @GetMapping("/school/{schoolId}")
